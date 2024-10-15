@@ -19,7 +19,7 @@ header{
 }
 
 nav{
-    background: #345373;
+    background: #34495e;
     padding: 10px 0;
 }
 
@@ -33,15 +33,16 @@ nav ul li{
     margin: 0 15px;
 }
 
-nav a {
-    color: #ecf0f1;
+nav a{
     text-decoration: none;
+    color: #ecf0f1; 
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s;   
 }
 
 nav a:hover{
-    color: #1abc1a;
+    color: #1abc9c;
+    
 }
 
 main{
@@ -51,23 +52,107 @@ main{
 section{
     margin: 40px 0;
 }
+
+h1{
+    padding: 15px;
+    text-align: center;
+}
+
 h2{
     border-bottom: 2px solid #1abc9c;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding: 15px;
 }
 
 .destino{
     background: #1abc9c;
-    color: white;
+    color: #fff;
     padding: 15px;
-    margin: 10px 0;
+    margin: 30px 0;
     cursor: pointer;
-    transition: transform 0.3, backgroung 0.3s;
+    transition: transform 0.3, background 0.3s;
     border-radius: 5px;
 }
 
-.destino:hover {
+.destino:hover{
     transform: scale(1.05);
     background: #16a085;
+}
+
+div {
+    text-align: center;
+}
+
+.Monguagua {
+    text-decoration: none;
+    color: #fff;
+}
+
+.desc-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-bottom: 20px;
+    gap: 0px; 
+}
+
+.Monguagua1 {
+    width: 750px;
+    max-width: 100%;
+    height: 500px ;
+    display: block;
+    margin: 20px; 
+    padding: 0; 
+}
+
+.descm {
+    max-width: 500px;
+    text-align: left;
+    line-height: 1.5;
+    margin: 0px; 
+}
+
+.desc {
+    text-align: left;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.seats-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.seat.selected {
+    background-color: green;
+    color: white;
+}
+
+.seat.unavailable {
+    background-color: red;
+    cursor: not-allowed;
 }
